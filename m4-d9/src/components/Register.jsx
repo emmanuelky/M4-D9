@@ -1,10 +1,10 @@
 import React from 'react'
-import { Form, Button } from 'react-bootstrap'
+import { Form, Button, Container, Row, Col } from 'react-bootstrap'
 
 function Register() {
     return (
         <div>
-            <Form>
+            <Form className="mb-5">
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
                     <Form.Control type="email" placeholder="Enter email" />
@@ -24,7 +24,43 @@ function Register() {
                     Submit
                 </Button>
             </Form>
-        </div>
+            <Container>
+                <Row className="mb-3">
+                    <Col md={4}>
+                        <img src="https://via.placeholder.com/300" className="img-fluid w-50 h-50 m-2" alt="" />
+                        <img src="https://via.placeholder.com/300" className="img-fluid w-50 h-50 m-2" alt="" />
+
+                    </Col>
+                    <Col md={4}>
+                        <img src="https://via.placeholder.com/300" className="img-fluid w-50 h-50 m-2" alt="" />
+                        <img src="https://via.placeholder.com/300" className="img-fluid w-50 h-50 m-2" alt="" />
+
+                    </Col>
+                    <Col md={4}>
+                        <img src="https://via.placeholder.com/300" className="img-fluid w-50 h-50 m-2" alt="" />
+                        <img src="https://via.placeholder.com/300" className="img-fluid w-50 h-50 m-2" alt="" />
+
+                    </Col>
+                </Row>
+                <Row>
+                    <Col sm={3} md={6}>
+                        <img src="https://via.placeholder.com/300" className="img-fluid w-50 h-50 m-3" alt="" />
+                        <img src="https://via.placeholder.com/300" className="img-fluid w-50 h-50 m-2" alt="" />
+
+                    </Col>
+                    <Col sm={3} md={6}>
+                        <img src="https://via.placeholder.com/300" className="img-fluid w-50 h-50 m-2" alt="" />
+                        <img src="https://via.placeholder.com/300" className="img-fluid w-50 h-50 m-2" alt="" />
+
+                    </Col>
+                    <Col sm={3} md={6}>
+                        <img src="https://via.placeholder.com/300" className="img-fluid w-50 h-50 m-2" alt="" />
+                        <img src="https://via.placeholder.com/300" className="img-fluid w-50 h-50 m-2" alt="" />
+
+                    </Col>
+                </Row>
+            </Container>
+        </div >
     )
 }
 
